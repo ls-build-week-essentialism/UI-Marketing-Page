@@ -126,3 +126,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+header {
+  position: sticky;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin: 2rem 1.5rem 0rem 1.5rem;
+}
+header a {
+  text-decoration: none;
+  color: #492b77;
+}
