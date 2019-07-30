@@ -158,6 +158,11 @@ header a .tag-line {
   color: white;
   text-shadow: 4px 4px 4px #444141;
 }
+.e-logo-div .e-logo {
+  position: relative;
+  left: 9rem;
+  padding-top: 0.5rem;
+}
 .main-content {
   text-align: center;
   display: flex;
