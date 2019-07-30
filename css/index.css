@@ -1,16 +1,21 @@
 .navigation {
   height: 20%;
-  width: 99%;
+  width: 100%;
   margin: 1rem;
   padding: 0;
   border-radius: 15px;
   box-shadow: 0 12px 12px -15px black;
 }
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
+}
 .navigation nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 90%;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .navigation nav {
@@ -31,12 +36,19 @@
 }
 .navigation nav .nav-anchors {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
+  justify-content: center;
+  width: 45%;
   margin-bottom: 0;
 }
+@media (max-width: 500px) {
+  .navigation nav .nav-anchors {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
 .navigation nav .nav-anchors a {
-  width: 7%;
+  align-content: baseline;
+  width: 9%;
   color: #27d1f2;
   font-size: 2rem;
   text-align: center;
@@ -48,12 +60,7 @@
 }
 @media (max-width: 500px) {
   .navigation nav .nav-anchors a {
-    margin: 0 auto;
-  }
-}
-@media (max-width: 500px) {
-  .navigation nav .nav-anchors {
-    margin: 0 auto;
+    width: 40%;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -228,6 +235,11 @@ img {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+@media (max-width: 500px) {
+  .container1 {
+    width: 100%;
+  }
+}
 .container1 .top-content {
   display: flex;
   flex-direction: row;
@@ -310,7 +322,7 @@ img {
 .container1 .top-content .register #sign-up-button {
   display: block;
   width: 50%;
-  height: 15%;
+  height: 5rem;
   margin: 5% auto;
   border: none;
   border-radius: 6px;
