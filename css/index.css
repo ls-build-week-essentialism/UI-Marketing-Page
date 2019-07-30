@@ -126,15 +126,59 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html,
+body {
+  background-color: #f9f9f9;
+}
+p {
+  line-height: 1.5;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
 header {
   position: sticky;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 2rem 1.5rem 0rem 1.5rem;
+  padding: 2rem 1rem 2rem 1rem;
+  background-color: #0099CC;
+  width: 80%;
 }
 header a {
   text-decoration: none;
-  color: #492b77;
+  color: #CCFFCC;
+}
+.main-content {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1.4rem;
+  background-color: white;
+  border: 2px solid red;
+  width: 86%;
+}
+.main-content .cta-blurb {
+  border-top: 2px solid blue;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 32, 32, 0.64);
+  color: white;
+}
+.main-content h1 {
+  background-color: white;
+  background-image: url('../images/jump.jpg');
+  font-size: 2rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 13rem;
+  color: #003399;
+}
+.p-one {
+  padding-top: 2rem;
+  width: 100%;
 }
