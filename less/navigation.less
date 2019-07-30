@@ -6,34 +6,63 @@
     border-radius: 15px;
     box-shadow: 0 12px 12px -15px black;
 
+    @media @mobile {
+        
 
+    }
 
     nav{
         display: flex;
         justify-content: space-between;
+        align-content: center;
         width: 90%;
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column-reverse;    
+        }
 
         .logo {
             width: 10%;
             height: 10%;
 
-            img{
-
+            @media @mobile {
+                margin: 0 auto;
+                width: 40%;
+                height: 40%;    
             }
+            
         }
 
-        a {
-            font-size: 2rem;
-            text-align: center;
-            text-decoration: none;
-            margin-top: 4.5rem;
-            margin-right: 0;
-            margin-left: 0;
-            padding: 0;
+        .nav-anchors{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-bottom: 0;
+            
+            a { 
+                
+                width: 7%;
+                color: @logoColor;
+                font-size: 2rem;
+                text-align: center;
+                text-decoration: none;
+                margin-top: 4rem;
+                margin-right: 0;
+                margin-left: 0;
+                padding: 0;
 
+            
+                @media @mobile {
+                    margin: 0 auto;
         
-            size: 12rem;
+                }
 
+            }
+             @media @mobile {
+                    margin: 0 auto;
+        
+                }
         }
 
     }

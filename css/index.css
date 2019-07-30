@@ -9,21 +9,52 @@
 .navigation nav {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   width: 90%;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .navigation nav .logo {
   width: 10%;
   height: 10%;
 }
-.navigation nav a {
+@media (max-width: 500px) {
+  .navigation nav .logo {
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+  }
+}
+.navigation nav .nav-anchors {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 0;
+}
+.navigation nav .nav-anchors a {
+  width: 7%;
+  color: #27d1f2;
   font-size: 2rem;
   text-align: center;
   text-decoration: none;
-  margin-top: 4.5rem;
+  margin-top: 4rem;
   margin-right: 0;
   margin-left: 0;
   padding: 0;
-  size: 12rem;
+}
+@media (max-width: 500px) {
+  .navigation nav .nav-anchors a {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .navigation nav .nav-anchors {
+    margin: 0 auto;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -200,11 +231,22 @@ img {
 .container1 .top-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .container1 .top-content {
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .container1 .top-content .product-description {
-  width: 50%;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .container1 .top-content .product-description {
+    width: 100%;
+  }
 }
 .container1 .top-content .product-description h1 {
   font-size: 8rem;
@@ -213,6 +255,11 @@ img {
   margin-top: 5%;
   padding: none;
   border: none;
+}
+@media (max-width: 500px) {
+  .container1 .top-content .product-description h1 {
+    font-size: 6rem;
+  }
 }
 .container1 .top-content .product-description h2 {
   font-size: 2rem;
@@ -225,6 +272,12 @@ img {
 }
 .container1 .top-content .product-description p {
   text-align: center;
+}
+@media (max-width: 500px) {
+  .container1 .top-content .product-description p {
+    width: 80%;
+    margin: 5%;
+  }
 }
 .container1 .top-content p {
   margin: 5% auto;
@@ -245,6 +298,15 @@ img {
   border-radius: 15px;
   box-shadow: 0 12px 12px -15px black;
 }
+@media (max-width: 500px) {
+  .container1 .top-content .register {
+    justify-content: center;
+    align-content: center;
+    width: 85%;
+    height: 40rem;
+    margin: 5% auto;
+  }
+}
 .container1 .top-content .register #sign-up-button {
   display: block;
   width: 50%;
@@ -252,11 +314,18 @@ img {
   margin: 5% auto;
   border: none;
   border-radius: 6px;
-  background: linear-gradient(45deg, #26d1f2, #496cf3);
+  background: linear-gradient(45deg, #27d1f2, #4810f7);
   font-size: 2rem;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .container1 .top-content .register #sign-up-button {
+    height: 18%;
+    width: 55%;
+  }
+}
 .container1 .top-content .register #sign-up-button a {
+  width: 100%;
   text-decoration: none;
   color: whitesmoke;
 }
@@ -266,23 +335,43 @@ img {
 .container1 .top-content .register #log-in-button {
   display: block;
   width: 50%;
-  height: 15%;
+  height: 5rem;
   margin: 5% auto;
   border: none;
   border-radius: 6px;
-  background: linear-gradient(25deg, #26d1f2, #496cf3);
+  background: linear-gradient(45deg, #27d1f2, #4810f7);
   font-size: 2rem;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .container1 .top-content .register #log-in-button {
+    height: 18%;
+    width: 55%;
+  }
+}
 .container1 .top-content .register #log-in-button a {
+  width: 100%;
   text-decoration: none;
-  color: gray;
+  color: #adb5bd;
 }
 .container2 .testimonials {
   display: flex;
+}
+@media (max-width: 500px) {
+  .container2 .testimonials {
+    flex-direction: column;
+  }
 }
 .container2 .testimonials .review {
   justify-content: space-between;
   width: 35%;
   margin: 5%;
+}
+@media (max-width: 500px) {
+  .container2 .testimonials .review {
+    justify-content: center;
+    align-content: center;
+    margin: 3% auto;
+    width: 80%;
+  }
 }

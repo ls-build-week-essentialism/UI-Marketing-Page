@@ -4,12 +4,24 @@
     .testimonials {
 
         display: flex;
+
+        @media @mobile {
         
-        .review{
+            flex-direction: column;
+        }
+        .review {
             justify-content: space-between;
             width: 35%;
             margin: 5%;
 
+            @media @mobile {
+                justify-content: center;
+                align-content: center;
+                margin: 3% auto;
+                width: 80%;
+    
+            }
+            
         }
 
     }
