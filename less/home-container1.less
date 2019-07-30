@@ -1,0 +1,166 @@
+
+.container1 {
+    
+    background-image: url(../img/thao-le-hoang-yYSY93clr4w-unsplash.jpg);
+    height: 70%;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    @media @mobile {
+        width: 100%;
+    
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+        @media @mobile {
+            flex-direction: column;
+            align-content: center;
+
+    
+        }
+
+        .product-description {
+            width: 70%;
+
+            @media @mobile {
+                width: 100%;
+    
+            }
+
+            h1{
+                font-size: 8rem;
+                color: white;
+                text-align: center;
+                margin-top: 5%;
+                padding: none;
+                border: none;
+
+                @media @mobile {
+                    font-size: 6rem;
+
+    
+                }
+            }
+
+            h2{
+                font-size: 2rem;
+                color: white;
+                text-align: center;
+                margin-top: 2%;
+                margin-bottom: 0%;
+                padding: none;
+                border: none;
+            }
+
+            p{
+                text-align: center;
+
+                @media @mobile {
+                    width: 80%;
+                    margin: 5%;
+
+    
+                }
+
+            }
+
+        }
+
+        p{
+            margin: 5% auto;
+            text-align: center;
+        }
+
+        
+
+        .register {
+
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            width: 35%;
+            height: 35rem;
+            padding: 2%;
+            margin-top: 2%;
+            margin-right: 5%;
+            margin-bottom: 2%;
+            margin-left: 5%;
+            background: whitesmoke;
+            border-radius: 15px;
+            box-shadow: 0 12px 12px -15px black;
+
+            @media @mobile {
+                justify-content: center;
+                align-content: center;
+                width: 85%;
+                height: 40rem;
+                margin: 5% auto;
+    
+            }
+
+            #sign-up-button {
+                display: block;
+                width: 50%;
+                height: 5rem;
+                margin: 5% auto;
+                border: none;
+                border-radius: 6px;
+                background: linear-gradient(45deg, @logoColor, @logoBackground);
+                font-size: 2rem;
+                text-align: center;
+            
+                @media @mobile {
+                    height: 18%;
+                    width: 55%
+        
+                }
+
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                    color: whitesmoke;
+            
+                }
+
+            }     
+
+            #little-p {
+                margin: 0;
+            }
+
+            #log-in-button {
+                display: block;
+                width: 50%;
+                height: 5rem;
+                margin: 5% auto;
+                border: none;
+                border-radius: 6px;
+                background: linear-gradient(45deg, @logoColor, @logoBackground);
+                font-size: 2rem;
+                text-align: center;
+                
+                @media @mobile {
+                    height: 18%;
+                    width: 55%;
+                }
+
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                    color: @GrayB;
+            
+                }
+
+            }  
+
+        }
+
+    }
+
+}
