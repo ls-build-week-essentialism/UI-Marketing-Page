@@ -1,3 +1,30 @@
+.navigation {
+  height: 20%;
+  width: 99%;
+  margin: 1rem;
+  padding: 0;
+  border-radius: 15px;
+  box-shadow: 0 12px 12px -15px black;
+}
+.navigation nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.navigation nav .logo {
+  width: 10%;
+  height: 10%;
+}
+.navigation nav a {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 4.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+  size: 12rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -130,7 +157,6 @@ table {
   box-sizing: border-box;
 }
 html {
-  background: linear-gradient(45deg, #26d1f2, #496cf3);
   font-size: 62.5%;
 }
 html,
@@ -164,81 +190,99 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
+.container1 {
+  background-image: url(../img/thao-le-hoang-yYSY93clr4w-unsplash.jpg);
+  height: 70%;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-.top-border {
-  width: 100%;
-  border-bottom: 1px solid white;
-}
-.log-in-bar {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #496cf3;
-  display: flex;
-  justify-content: center;
-}
-.log-in-bar #log-in-button {
-  display: block;
-  width: 30%;
-  height: 1%;
-  padding: 2%;
-  border: none;
-  border-radius: 6px;
-  background: #496cf3;
-  font-size: 2rem;
-  color: whitesmoke;
-  text-align: center;
-}
-.log-in-bar #log-in-button a {
-  text-decoration: none;
-}
-.home {
-  background: none;
-  border-radius: 2px;
-}
-.home .top-content {
+.container1 .top-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
 }
-.home .top-content .product-description {
+.container1 .top-content .product-description {
   width: 50%;
 }
-.home .top-content .product-description h1 {
+.container1 .top-content .product-description h1 {
+  font-size: 8rem;
+  color: white;
   text-align: center;
-  margin: 5%;
+  margin-top: 5%;
   padding: none;
   border: none;
-  border-radius: 15px;
 }
-.home .top-content .product-description p {
+.container1 .top-content .product-description h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  padding: none;
+  border: none;
+}
+.container1 .top-content .product-description p {
   text-align: center;
 }
-.home .top-content .sign-up {
+.container1 .top-content p {
+  margin: 5% auto;
+  text-align: center;
+}
+.container1 .top-content .register {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-content: space-between;
   width: 35%;
-  height: 30rem;
+  height: 35rem;
   padding: 2%;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-right: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   margin-left: 5%;
   background: whitesmoke;
   border-radius: 15px;
+  box-shadow: 0 12px 12px -15px black;
 }
-.home .top-content .sign-up input {
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  margin: 1rem;
-  width: 80%;
+.container1 .top-content .register #sign-up-button {
+  display: block;
+  width: 50%;
   height: 15%;
+  margin: 5% auto;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #26d1f2, #496cf3);
+  font-size: 2rem;
+  text-align: center;
 }
-.home .testimonials {
-  margin: 10%;
+.container1 .top-content .register #sign-up-button a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.container1 .top-content .register #little-p {
+  margin: 0;
+}
+.container1 .top-content .register #log-in-button {
+  display: block;
+  width: 50%;
+  height: 15%;
+  margin: 5% auto;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(25deg, #26d1f2, #496cf3);
+  font-size: 2rem;
+  text-align: center;
+}
+.container1 .top-content .register #log-in-button a {
+  text-decoration: none;
+  color: gray;
+}
+.container2 .testimonials {
+  display: flex;
+}
+.container2 .testimonials .review {
+  justify-content: space-between;
+  width: 35%;
+  margin: 5%;
 }
