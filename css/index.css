@@ -160,6 +160,7 @@ header {
 @media (min-width: 541px) {
   header {
     width: 100%;
+    position: static !important;
   }
 }
 header a {
@@ -321,6 +322,8 @@ header a .tag-line {
   margin-top: 1rem;
   background-color: white;
   width: 86%;
+}
+@media (min-width: 541px) {
 }
 .main-content .cta-blurb {
   border-top: 2px solid gray;
