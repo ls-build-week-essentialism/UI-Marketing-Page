@@ -25,11 +25,25 @@ header {
     //color: rgb(137, 224, 137);
     color: rgb(165, 72, 72);
 
+      @media @desktop {
+          display: flex;
+          position: relative;
+          left: 5rem;
+        
+      }
+
         }
 
     .nav-link-a {
      position: relative;
      left: 2rem;
+
+      @media @desktop {
+          position: relative;
+          left: -6rem;
+          font-size: 1.5rem;
+          line-height: 2
+      }
     }
 
      a .tag-line {
@@ -38,6 +52,12 @@ header {
         color: black;
         text-shadow: 4px 4px 4px  gray;
        //border: 2px solid red;
+
+       @media @desktop {
+           position: relative;
+           top: 5rem;
+           font-size: 2rem;
+       }
     }
 }
 
@@ -47,11 +67,20 @@ header {
  padding: 1rem 3rem 0 3rem;
  border-bottom: 2px solid gray;
  
+ @media @desktop {
+    display: none;
+   }
 
-    .e-logo {
-     position: relative;
-     left: 5.9rem;
-     padding-top: -1rem;
-     
-    }
+   @media @tablet {
+       //display: none;
+   }
+    
+   
 }
+
+.e-logo {
+    position: relative;
+    left: 5.9rem;
+    padding-top: -1rem;
+    
+   }

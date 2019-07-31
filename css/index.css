@@ -157,7 +157,7 @@ header {
   width: 80%;
   z-index: 100;
 }
-@media (min-width: 700px) {
+@media (min-width: 541px) {
   header {
     width: 100%;
   }
@@ -166,14 +166,36 @@ header a {
   text-decoration: none;
   color: #a54848;
 }
+@media (min-width: 541px) {
+  header a {
+    display: flex;
+    position: relative;
+    left: 5rem;
+  }
+}
 header .nav-link-a {
   position: relative;
   left: 2rem;
+}
+@media (min-width: 541px) {
+  header .nav-link-a {
+    position: relative;
+    left: -6rem;
+    font-size: 1.5rem;
+    line-height: 2;
+  }
 }
 header a .tag-line {
   font-size: 1.7rem;
   color: black;
   text-shadow: 4px 4px 4px  gray;
+}
+@media (min-width: 541px) {
+  header a .tag-line {
+    position: relative;
+    top: 5rem;
+    font-size: 2rem;
+  }
 }
 .e-logo-div {
   background-image: url("../images/bluewhite4.png");
@@ -181,7 +203,14 @@ header a .tag-line {
   padding: 1rem 3rem 0 3rem;
   border-bottom: 2px solid gray;
 }
-.e-logo-div .e-logo {
+@media (min-width: 541px) {
+  .e-logo-div {
+    display: none;
+  }
+}
+@media (min-width: 485px) {
+}
+.e-logo {
   position: relative;
   left: 5.9rem;
   padding-top: -1rem;
@@ -196,7 +225,7 @@ header a .tag-line {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 700px) {
+@media (min-width: 541px) {
   .member-card {
     display: flex;
     flex-wrap: wrap;
@@ -215,13 +244,13 @@ header a .tag-line {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-@media (min-width: 700px) {
+@media (min-width: 541px) {
   .member-name {
     position: relative;
     top: 1rem;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 541px) {
   .member-bio {
     position: relative;
     top: 4rem;
@@ -242,7 +271,7 @@ header a .tag-line {
 .jay-div {
   padding-top: 3rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 541px) {
   .jay-div {
     position: relative;
     top: -2.5rem;
@@ -251,7 +280,7 @@ header a .tag-line {
 .yurika-div {
   padding-top: 3rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 541px) {
   .yurika-div {
     position: relative;
     top: -2.5rem;
@@ -260,7 +289,7 @@ header a .tag-line {
 .cameron-div {
   padding-top: 3rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 541px) {
   .cameron-div {
     position: relative;
     top: -2.5rem;
@@ -269,7 +298,7 @@ header a .tag-line {
 .jas-div {
   padding-top: 3rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 541px) {
   .jas-div {
     position: relative;
     top: -2.5rem;
@@ -278,7 +307,7 @@ header a .tag-line {
 .ramses-div {
   padding-top: 3rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 541px) {
   .ramses-div {
     position: relative;
     top: -2.5rem;
@@ -301,22 +330,26 @@ header a .tag-line {
   background-color: #5ac9ff;
   color: white;
 }
-.main-content h1 {
-  background-color: white;
-  background-image: url('../images/jump.jpg');
-  font-size: 2rem;
-  width: 100%;
-  padding: 1rem 12rem 6rem 0.5rem;
-  margin: 0 auto;
-  color: #0d3e5f;
-  text-shadow: 5px 5px 5px gray;
-}
-@media (min-width: 500px) {
-  .main-content h1 {
-    display: none;
+@media (min-width: 541px) {
+  .main-content .cta-blurb {
+    width: 70%;
+    margin-left: 9rem;
   }
 }
-@media (min-width: 700px) {
+.opening-tag {
+  position: relative;
+  left: 6rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #833131;
+  text-shadow: 3px 3px 3px  gray;
+}
+@media (min-width: 541px) {
+  .opening-tag {
+    position: relative;
+    left: 30rem;
+    font-size: 2.5rem;
+  }
 }
 .phones {
   margin-top: 2rem;

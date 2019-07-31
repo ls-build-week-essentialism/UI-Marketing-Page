@@ -13,6 +13,9 @@
   width: 86%;
   //width: 100%;
 
+
+   
+
  
   
   .cta-blurb {
@@ -27,33 +30,33 @@
       color: white;
       //background-color: #66CCFF;
       //background-color: white;
+
+      @media @desktop {
+          width: 70%;
+          margin-left: 9rem;
+      }
   }
 
 
     
 }
 
- .main-content h1 {
-//border: 2px solid red;
-background-color: white;
-background-image: url('../images/jump.jpg');
-font-size: 2rem;
-width: 100%;
-padding: 1rem 12rem 6rem .5rem;
-margin: 0 auto;
-//color: black;
-color: rgb(13, 62, 95);
-text-shadow: 5px 5px 5px gray; 
-//color: #003399; 
+.opening-tag {
+    //border: 2px solid red;
+    position: relative; 
+    left: 6rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: rgb(131, 49, 49);
+    text-shadow: 3px 3px 3px  gray;
 
-@media @tablet {
-    display: none;
+    @media @desktop {
+        position: relative; 
+        left: 30rem; 
+        font-size: 2.5rem;   
+    }
 }
 
-   @media @desktop {
-       //display: none;
-   }
-}
 
 .phones {
     margin-top: 2rem;
