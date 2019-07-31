@@ -10,21 +10,38 @@
         width: 100%;
     }
 
+
+
     nav{
         display: flex;
         justify-content: space-between;
         align-content: center;
         width: 100%;
 
+        @media @tablet {
+            display: flex;
+            flex-direction: column;
+        
+        } 
+
         @media @mobile {
             display: flex;
             flex-direction: column-reverse;    
         }
+        
 
         .logo {
             margin-left:3rem;
             width: 11%;
             height: 11%;
+
+
+            @media @tablet {
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                width: 20%;
+                height: 20%;
+            } 
 
             @media @mobile {
                 margin: 0 auto;
@@ -39,6 +56,11 @@
             justify-content: center;
             width: 35%;
             margin-bottom: 0;
+
+            @media @tablet {
+                width: 100%;
+                margin-bottom: 2rem;
+            } 
 
             @media @mobile {
                 width: 100%;
@@ -58,10 +80,15 @@
                 margin-left: 0;
                 padding: 0;
             
+                @media @tablet {
+                    width: 40%;
+                    margin-top: 1rem;
+                    margin-bottom: 0;
+                   
+                } 
+
                 @media @mobile {
                     width: 40%;
-                    
-        
                 }
 
             }

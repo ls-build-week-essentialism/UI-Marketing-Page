@@ -17,6 +17,12 @@
   align-content: center;
   width: 100%;
 }
+@media (max-width: 1000px) {
+  .navigation nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (max-width: 500px) {
   .navigation nav {
     display: flex;
@@ -27,6 +33,14 @@
   margin-left: 3rem;
   width: 11%;
   height: 11%;
+}
+@media (max-width: 1000px) {
+  .navigation nav .logo {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 20%;
+    height: 20%;
+  }
 }
 @media (max-width: 500px) {
   .navigation nav .logo {
@@ -40,6 +54,12 @@
   justify-content: center;
   width: 35%;
   margin-bottom: 0;
+}
+@media (max-width: 1000px) {
+  .navigation nav .nav-anchors {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 @media (max-width: 500px) {
   .navigation nav .nav-anchors {
@@ -58,6 +78,13 @@
   margin-right: 0;
   margin-left: 0;
   padding: 0;
+}
+@media (max-width: 1000px) {
+  .navigation nav .nav-anchors a {
+    width: 40%;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 500px) {
   .navigation nav .nav-anchors a {
@@ -246,7 +273,7 @@ footer .nav-anchors {
   height: 100%;
   width: 80%;
   margin-top: 4rem;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
 }
 @media (max-width: 500px) {
   footer .nav-anchors {
@@ -287,7 +314,14 @@ footer .nav-anchors a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
   width: 100%;
+}
+@media (max-width: 1000px) {
+  .container1 .top-content {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 @media (max-width: 500px) {
   .container1 .top-content {
@@ -297,6 +331,11 @@ footer .nav-anchors a {
 }
 .container1 .top-content .product-description {
   width: 70%;
+}
+@media (max-width: 1000px) {
+  .container1 .top-content .product-description {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .container1 .top-content .product-description {
@@ -326,7 +365,19 @@ footer .nav-anchors a {
   border: none;
 }
 .container1 .top-content .product-description p {
+  color: #dee2e6;
+  width: 80%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+@media (max-width: 1000px) {
+  .container1 .top-content .product-description p {
+    margin: 5% auto;
+    width: 80%;
+  }
 }
 @media (max-width: 500px) {
   .container1 .top-content .product-description p {
@@ -334,24 +385,32 @@ footer .nav-anchors a {
     width: 80%;
   }
 }
-.container1 .top-content p {
-  margin: 5% auto;
-  text-align: center;
-}
 .container1 .top-content .register {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  align-content: center;
   width: 25%;
-  height: 35rem;
+  height: 30rem;
   padding: 2%;
-  margin-top: 2%;
-  margin-right: 5%;
-  margin-bottom: 2%;
-  margin-left: 5%;
-  background: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: #dee2e6;
   border-radius: 15px;
   box-shadow: 0 12px 12px -15px black;
+}
+@media (max-width: 1000px) {
+  .container1 .top-content .register {
+    justify-content: center;
+    align-content: center;
+    width: 55%;
+    height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 10%;
+  }
 }
 @media (max-width: 500px) {
   .container1 .top-content .register {
@@ -359,13 +418,22 @@ footer .nav-anchors a {
     align-content: center;
     width: 85%;
     height: 40rem;
-    margin: 5% auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 12%;
   }
+}
+.container1 .top-content .register p {
+  color: #343a40;
+  margin: 5% auto;
+  text-align: center;
+  letter-spacing: 2px;
 }
 .container1 .top-content .register #sign-up-button {
   display: block;
   width: 50%;
-  height: 5rem;
+  height: 10rem;
   margin: 5% auto;
   border: none;
   border-radius: 6px;
@@ -382,16 +450,27 @@ footer .nav-anchors a {
 .container1 .top-content .register #sign-up-button a {
   width: 100%;
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
 }
 .container1 .top-content .register #little-p {
-  margin: 0;
+  color: #495057;
+  width: 100%;
+  margin: 40px 0 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  border-top: 1px solid #adb5bd;
+  line-height: 0.09em;
+}
+.container1 .top-content .register #little-p span {
+  background: #dee2e6;
+  padding: 0px 10px;
 }
 .container1 .top-content .register #log-in-button {
   display: block;
   width: 50%;
-  height: 5rem;
-  margin: 5% auto;
+  height: 10rem;
+  margin: 3% auto;
   border: none;
   border-radius: 6px;
   background: linear-gradient(45deg, #27d1f2, #4810f7);
@@ -407,7 +486,7 @@ footer .nav-anchors a {
 .container1 .top-content .register #log-in-button a {
   width: 100%;
   text-decoration: none;
-  color: #adb5bd;
+  color: #cfd4da;
 }
 .container2 .how-it-works {
   display: flex;
@@ -484,6 +563,12 @@ footer .nav-anchors a {
 }
 .about-container .about-us-header p {
   color: #868e96;
+}
+@media (max-width: 1000px) {
+  .about-container .about-us-header {
+    width: 57%;
+    height: 30%;
+  }
 }
 @media (max-width: 500px) {
   .about-container .about-us-header {
