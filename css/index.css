@@ -229,6 +229,48 @@ img {
   max-width: 100%;
   height: auto;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 0%;
+  border-radius: 15px;
+  box-shadow: 0 -12px 20px -17px black;
+}
+footer .nav-anchors {
+  text-align: center;
+  height: 100%;
+  width: 80%;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  footer .nav-anchors {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+footer .nav-anchors a {
+  align-content: baseline;
+  width: 4rem;
+  color: #27d1f2;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 4rem;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 0;
+}
+@media (max-width: 500px) {
+  footer .nav-anchors a {
+    width: 40%;
+  }
+}
 .container1 {
   background-image: url(../img/thao-le-hoang-yYSY93clr4w-unsplash.jpg);
   height: 70%;
@@ -263,7 +305,7 @@ img {
 }
 .container1 .top-content .product-description h1 {
   font-size: 8rem;
-  color: white;
+  color: #dee2e6;
   text-align: center;
   margin-top: 5%;
   padding: none;
@@ -276,7 +318,7 @@ img {
 }
 .container1 .top-content .product-description h2 {
   font-size: 2rem;
-  color: white;
+  color: #adb5bd;
   text-align: center;
   margin-top: 2%;
   margin-bottom: 0%;
@@ -405,6 +447,9 @@ img {
   margin-left: auto;
   height: 100%;
 }
+.container2 .how-it-works .symbol p {
+  text-align: center;
+}
 @media (max-width: 500px) {
   .container2 .how-it-works .symbol {
     justify-content: center;
@@ -412,4 +457,84 @@ img {
     margin: 3% auto;
     width: 80%;
   }
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+.about-container .about-us-header {
+  width: 40%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 0 0px 20px -5px black;
+  text-align: center;
+}
+.about-container .about-us-header h2 {
+  color: #4810f7;
+}
+.about-container .about-us-header p {
+  color: #868e96;
+}
+@media (max-width: 500px) {
+  .about-container .about-us-header {
+    width: 85%;
+    height: 30%;
+  }
+}
+.about-container .team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .about-container .team {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+.about-container .team .team-mate {
+  width: 40%;
+  height: 50%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 0 0px 20px -5px black;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .about-container .team .team-mate {
+    width: 70%;
+    height: 40%;
+  }
+}
+.about-container .team .team-mate h3 {
+  font-size: 2rem;
+  color: #868e96;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: none;
+  border: none;
+}
+.about-container .team .team-mate p {
+  font-size: 1.6rem;
+  color: #868e96;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: none;
+  border: none;
 }
