@@ -146,30 +146,86 @@ header {
   top: 0;
   padding: 2rem 1rem 2rem 1rem;
   background-color: #5ac9ff;
+  border-bottom: 2px solid gray;
   width: 79.9%;
   z-index: 100;
 }
 header a {
   text-decoration: none;
-  color: #CCFFCC;
+  text-shadow: 2px 2px 2px #081c57;
+  color: #89e089;
 }
 header a .tag-line {
   font-size: 2rem;
   color: white;
-  text-shadow: 4px 4px 4px #444141;
+  text-shadow: 4px 4px 4px #081c57;
 }
 .e-logo-div .e-logo {
   position: relative;
   left: 9rem;
-  padding-top: 0.5rem;
+  padding-top: 2rem;
+}
+.team-blurb {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.member-card {
+  margin: 2rem 1rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 700px) {
+  .member-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.member-card {
+  width: 80%;
+}
+.member-pic {
+  width: 150px;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.name-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.role-text {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+.member-bio {
+  padding-top: 1rem;
+}
+.jay-div {
+  padding-top: 3rem;
+}
+.yurika-div {
+  padding-top: 3rem;
+}
+.cameron-div {
+  padding-top: 3rem;
+}
+.jas-div {
+  padding-top: 3rem;
+}
+.ramses-div {
+  padding-top: 3rem;
 }
 .main-content {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-top: 2rem;
   background-color: white;
-  border: 2px solid red;
   width: 86%;
 }
 .main-content .cta-blurb {
@@ -187,8 +243,18 @@ header a .tag-line {
   width: 100%;
   padding: 1rem 12rem 6rem 0.5rem;
   margin: 0 auto;
-  color: black;
+  color: #0d3e5f;
   text-shadow: 5px 5px 5px gray;
+}
+@media (min-width: 500px) {
+  .main-content h1 {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  .main-content h1 {
+    display: none;
+  }
 }
 .phones {
   margin-top: 2rem;
@@ -215,19 +281,18 @@ header a .tag-line {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
-.exp {
-  background-color: #00557e;
-}
 .work {
   font-size: 1.5rem;
   background-color: white;
   color: #00557e;
-  margin-top: 2rem;
+  margin-top: 5rem;
   padding: 0.5rem 0 0.5rem 0;
 }
 .list {
   margin-top: 3rem;
   margin-bottom: 2rem;
+  padding-bottom: 4rem;
+  border-bottom: 2px solid gray;
 }
 .list .first-p {
   position: relative;
@@ -237,8 +302,10 @@ header a .tag-line {
   margin-top: 1rem;
 }
 .list2 {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
+  padding-bottom: 4rem;
+  border-bottom: 2px solid gray;
 }
 .list2 .second-p {
   position: relative;
@@ -248,8 +315,33 @@ header a .tag-line {
   margin-top: 1rem;
 }
 .list3 {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .social-img {
   margin-top: 1rem;
+}
+.cta-btn-div2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #5ac9ff;
+}
+footer {
+  text-align: center;
+}
+footer .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3rem;
+  padding-top: 0.9rem;
+  border-top: 2px solid gray;
+}
+footer .footer-link {
+  text-decoration: none;
+  color: #a1a765;
+  width: 25%;
+  margin-bottom: 1rem;
+}
+footer p {
+  padding-bottom: 1rem;
 }
