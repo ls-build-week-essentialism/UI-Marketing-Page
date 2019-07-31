@@ -8,35 +8,50 @@ header {
     top: 0;
     //margin: 2rem 1.5rem 0rem 1.5rem;
     padding: 2rem 1rem 2rem 1rem;
-    background-color: #5ac9ff;
+    //background-color: #5ac9ff;
+    background-color: white;
     border-bottom: 2px solid gray;
-    width:  79.9%;
+    width:  80%;
     z-index: 100;
-
-   
+    
+    @media @desktop {
+        width: 100%
+       }
     
 
     a {
     text-decoration: none;
-    text-shadow: 2px 2px 2px  rgb(8, 28, 87);
-    color: rgb(137, 224, 137);    
+    //justify-content: space-between;
+    //color: rgb(137, 224, 137);
+    color: rgb(165, 72, 72);
+
+        }
+
+    .nav-link-a {
+     position: relative;
+     left: 2rem;
     }
 
      a .tag-line {
-        font-size: 2rem;
-        color: white;
-        text-shadow: 4px 4px 4px  rgb(8, 28, 87);
+        font-size: 1.7rem;
+        //color: white;
+        color: black;
+        text-shadow: 4px 4px 4px  gray;
        //border: 2px solid red;
     }
 }
 
 .e-logo-div {
-    //display: flex;
-    //border: 2px solid red;
+ background-image: url("../images/bluewhite4.png");
+ margin: 1rem 2rem 0rem 2rem;
+ padding: 1rem 3rem 0 3rem;
+ border-bottom: 2px solid gray;
+ 
 
     .e-logo {
      position: relative;
-     left: 9rem;
-     padding-top: 2rem;
+     left: 5.9rem;
+     padding-top: -1rem;
+     
     }
 }

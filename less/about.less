@@ -10,12 +10,13 @@
     flex-direction: column;
 
     
-    @media @desktop {
+     @media @desktop {
      display: flex;
+     flex-wrap: wrap;
      flex-direction: row;
     justify-content: space-between;
         //align-content: center;
-    }
+    } 
     
 }
 
@@ -33,9 +34,29 @@ width: 80%;
     border-bottom-right-radius: 15px;  
 }
 
+.member-name {
+    
+    @media @desktop {
+     position: relative;
+     top: 1rem;
+    }
+}
+
+.member-bio {
+  
+    @media @desktop {
+    position: relative;
+    top: 4rem;
+    left: -9rem;
+   } 
+}
+
 .name-text {
     font-weight: bold;
     font-size: 1.2rem;
+
+   
+
 }
 
 .role-text {
@@ -49,20 +70,46 @@ width: 80%;
 
 .jay-div {
  padding-top: 3rem;
+
+  @media @desktop {
+      position: relative;
+      top: -2.5rem;
+  }
 }
 
 .yurika-div {
- padding-top: 3rem;   
+ padding-top: 3rem;
+ 
+ @media @desktop {
+    position: relative;
+    top: -2.5rem;
+   }
 }
 
 .cameron-div {
-padding-top: 3rem;   
+padding-top: 3rem;
+
+@media @desktop {
+    position: relative;
+    top: -2.5rem;
+  }
+
 }
 
 .jas-div {
-padding-top: 3rem; 
+padding-top: 3rem;
+
+@media @desktop {
+    position: relative;
+    top: -2.5rem;
+  }
 }
 
 .ramses-div {
- padding-top: 3rem;   
+ padding-top: 3rem;
+ 
+ @media @desktop {
+    position: relative;
+    top: -2.5rem;
+  }
 }
