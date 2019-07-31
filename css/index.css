@@ -1,0 +1,389 @@
+.navigation {
+  height: 20%;
+  width: 100%;
+  margin: 1rem;
+  padding: 0;
+  border-radius: 15px;
+  box-shadow: 0 12px 12px -15px black;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
+}
+.navigation nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.navigation nav .logo {
+  width: 10%;
+  height: 10%;
+}
+@media (max-width: 500px) {
+  .navigation nav .logo {
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+  }
+}
+.navigation nav .nav-anchors {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  .navigation nav .nav-anchors {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+.navigation nav .nav-anchors a {
+  align-content: baseline;
+  width: 9%;
+  color: #27d1f2;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 4rem;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+@media (max-width: 500px) {
+  .navigation nav .nav-anchors a {
+    width: 40%;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container1 {
+  background-image: url(../img/thao-le-hoang-yYSY93clr4w-unsplash.jpg);
+  height: 70%;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@media (max-width: 500px) {
+  .container1 {
+    width: 100%;
+  }
+}
+.container1 .top-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .container1 .top-content {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+.container1 .top-content .product-description {
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .container1 .top-content .product-description {
+    width: 100%;
+  }
+}
+.container1 .top-content .product-description h1 {
+  font-size: 8rem;
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+  padding: none;
+  border: none;
+}
+@media (max-width: 500px) {
+  .container1 .top-content .product-description h1 {
+    font-size: 6rem;
+  }
+}
+.container1 .top-content .product-description h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  padding: none;
+  border: none;
+}
+.container1 .top-content .product-description p {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container1 .top-content .product-description p {
+    width: 80%;
+    margin: 5%;
+  }
+}
+.container1 .top-content p {
+  margin: 5% auto;
+  text-align: center;
+}
+.container1 .top-content .register {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 35%;
+  height: 35rem;
+  padding: 2%;
+  margin-top: 2%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  background: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 12px 12px -15px black;
+}
+@media (max-width: 500px) {
+  .container1 .top-content .register {
+    justify-content: center;
+    align-content: center;
+    width: 85%;
+    height: 40rem;
+    margin: 5% auto;
+  }
+}
+.container1 .top-content .register #sign-up-button {
+  display: block;
+  width: 50%;
+  height: 5rem;
+  margin: 5% auto;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #27d1f2, #4810f7);
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container1 .top-content .register #sign-up-button {
+    height: 18%;
+    width: 55%;
+  }
+}
+.container1 .top-content .register #sign-up-button a {
+  width: 100%;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.container1 .top-content .register #little-p {
+  margin: 0;
+}
+.container1 .top-content .register #log-in-button {
+  display: block;
+  width: 50%;
+  height: 5rem;
+  margin: 5% auto;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #27d1f2, #4810f7);
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container1 .top-content .register #log-in-button {
+    height: 18%;
+    width: 55%;
+  }
+}
+.container1 .top-content .register #log-in-button a {
+  width: 100%;
+  text-decoration: none;
+  color: #adb5bd;
+}
+.container2 .testimonials {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container2 .testimonials {
+    flex-direction: column;
+  }
+}
+.container2 .testimonials .review {
+  justify-content: space-between;
+  width: 35%;
+  margin: 5%;
+}
+@media (max-width: 500px) {
+  .container2 .testimonials .review {
+    justify-content: center;
+    align-content: center;
+    margin: 3% auto;
+    width: 80%;
+  }
+}
