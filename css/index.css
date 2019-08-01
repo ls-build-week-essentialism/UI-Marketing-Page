@@ -433,6 +433,7 @@ header a .tag-line {
   font-size: 1.3em;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+  background-color: white;
 }
 @media (min-width: 541px) {
   .join-btn {
