@@ -1,7 +1,7 @@
 .navigation {
     height: 20%;
     width: 100%;
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 0;
     border-radius: 15px;
     box-shadow: 0 12px 12px -15px black;
@@ -10,20 +10,38 @@
         width: 100%;
     }
 
+
+
     nav{
         display: flex;
         justify-content: space-between;
         align-content: center;
         width: 100%;
 
+        @media @tablet {
+            display: flex;
+            flex-direction: column;
+        
+        } 
+
         @media @mobile {
             display: flex;
             flex-direction: column-reverse;    
         }
+        
 
         .logo {
-            width: 10%;
-            height: 10%;
+            margin-left:3rem;
+            width: 11%;
+            height: 11%;
+
+
+            @media @tablet {
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                width: 20%;
+                height: 20%;
+            } 
 
             @media @mobile {
                 margin: 0 auto;
@@ -36,8 +54,13 @@
         .nav-anchors{
             display: flex;
             justify-content: center;
-            width: 45%;
+            width: 35%;
             margin-bottom: 0;
+
+            @media @tablet {
+                width: 100%;
+                margin-bottom: 2rem;
+            } 
 
             @media @mobile {
                 width: 100%;
@@ -47,7 +70,7 @@
 
             a { 
                 align-content: baseline;
-                width: 9%;
+                width: 8rem;
                 color: @logoColor;
                 font-size: 2rem;
                 text-align: center;
@@ -57,10 +80,15 @@
                 margin-left: 0;
                 padding: 0;
             
+                @media @tablet {
+                    width: 40%;
+                    margin-top: 1rem;
+                    margin-bottom: 0;
+                   
+                } 
+
                 @media @mobile {
                     width: 40%;
-                    
-        
                 }
 
             }
