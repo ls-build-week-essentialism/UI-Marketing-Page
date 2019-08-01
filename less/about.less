@@ -1,29 +1,38 @@
+
+
 .team-blurb {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    //font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px 3px  gray;
     margin-top: 1rem;
+    color: rgb(131, 49, 49);
+
+    @media @desktop {
+     position: relative;
+     left: -4rem;
+     font-size: 2rem;
+    }
 }
 
 .member-card {
      margin: 2rem 1rem 1rem 4rem;
     display: flex;
     flex-direction: column;
+    width: 80%;
 
     
      @media @desktop {
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
-    justify-content: space-between;
-        //align-content: center;
+     //border: 2px solid red;
+     margin-left: 20rem;
+     margin-top: 5rem;
     } 
     
 }
 
-.member-card {
-//background-image: url("../images/");
-width: 80%;
-}
 
 .member-pic {
     width: 150px;
@@ -37,17 +46,57 @@ width: 80%;
 .member-name {
     
     @media @desktop {
+     align-self: flex-end;
      position: relative;
-     top: 1rem;
+     left: -9rem;
+    }
+}
+
+ .yurika {
+    
+    @media @desktop {
+        position: relative;
+        top: .5rem;
+    }
+}
+
+.cameron {
+    
+    @media @desktop {
+        position: relative;
+        top: .5rem;
+    }
+}
+
+.jasmine {
+    
+    @media @desktop {
+        position: relative;
+        top: .5rem;
+    }
+}
+
+.ramses {
+    
+    @media @desktop {
+        position: relative;
+        top: .7rem;
     }
 }
 
 .member-bio {
+
+ padding-top: 1rem;
+ position: relative;
+ top: -4rem;
+ left: 13rem;
+ font-size: 20px;
   
     @media @desktop {
     position: relative;
     top: 4rem;
     left: -9rem;
+    font-size: 20px;
    } 
 }
 
@@ -64,16 +113,22 @@ width: 80%;
  font-size: 1.1rem;
 }
 
-.member-bio {
- padding-top: 1rem;
+.div-flex {
+    
+    @media @desktop {
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: 2rem;
+    }
+    
 }
-
 .jay-div {
  padding-top: 3rem;
 
   @media @desktop {
       position: relative;
-      top: -2.5rem;
+      top: -3rem;
+      padding-left: 8rem;
   }
 }
 
@@ -92,6 +147,7 @@ padding-top: 3rem;
 @media @desktop {
     position: relative;
     top: -2.5rem;
+    padding-left: 8rem;
   }
 
 }
@@ -111,5 +167,7 @@ padding-top: 3rem;
  @media @desktop {
     position: relative;
     top: -2.5rem;
+    padding-left: 9.5rem;
   }
 }
+

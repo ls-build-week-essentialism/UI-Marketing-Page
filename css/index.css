@@ -159,8 +159,13 @@ header {
 }
 @media (min-width: 541px) {
   header {
-    width: 100%;
+    width: 90%;
     position: static !important;
+    background-image: url("../images/elogo2.png");
+    margin-left: 3rem;
+    margin-top: 1rem;
+    background-repeat: no-repeat;
+    padding-bottom: 3rem;
   }
 }
 header a {
@@ -195,6 +200,7 @@ header a .tag-line {
   header a .tag-line {
     position: relative;
     top: 5rem;
+    left: 9rem;
     font-size: 2rem;
   }
 }
@@ -218,24 +224,32 @@ header a .tag-line {
 }
 .team-blurb {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  text-shadow: 3px 3px 3px  gray;
   margin-top: 1rem;
+  color: #833131;
+}
+@media (min-width: 541px) {
+  .team-blurb {
+    position: relative;
+    left: -4rem;
+    font-size: 2rem;
+  }
 }
 .member-card {
   margin: 2rem 1rem 1rem 4rem;
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 @media (min-width: 541px) {
   .member-card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    margin-left: 20rem;
+    margin-top: 5rem;
   }
-}
-.member-card {
-  width: 80%;
 }
 .member-pic {
   width: 150px;
@@ -247,15 +261,48 @@ header a .tag-line {
 }
 @media (min-width: 541px) {
   .member-name {
+    align-self: flex-end;
     position: relative;
-    top: 1rem;
+    left: -9rem;
   }
+}
+@media (min-width: 541px) {
+  .yurika {
+    position: relative;
+    top: 0.5rem;
+  }
+}
+@media (min-width: 541px) {
+  .cameron {
+    position: relative;
+    top: 0.5rem;
+  }
+}
+@media (min-width: 541px) {
+  .jasmine {
+    position: relative;
+    top: 0.5rem;
+  }
+}
+@media (min-width: 541px) {
+  .ramses {
+    position: relative;
+    top: 0.7rem;
+  }
+}
+.member-bio {
+  padding-top: 1rem;
+  position: relative;
+  top: -4rem;
+  left: 13rem;
+  font-size: 20px;
 }
 @media (min-width: 541px) {
   .member-bio {
     position: relative;
     top: 4rem;
     left: -9rem;
+    font-size: 20px;
   }
 }
 .name-text {
@@ -266,8 +313,12 @@ header a .tag-line {
   font-style: italic;
   font-size: 1.1rem;
 }
-.member-bio {
-  padding-top: 1rem;
+@media (min-width: 541px) {
+  .div-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
 }
 .jay-div {
   padding-top: 3rem;
@@ -275,7 +326,8 @@ header a .tag-line {
 @media (min-width: 541px) {
   .jay-div {
     position: relative;
-    top: -2.5rem;
+    top: -3rem;
+    padding-left: 8rem;
   }
 }
 .yurika-div {
@@ -294,6 +346,7 @@ header a .tag-line {
   .cameron-div {
     position: relative;
     top: -2.5rem;
+    padding-left: 8rem;
   }
 }
 .jas-div {
@@ -312,6 +365,7 @@ header a .tag-line {
   .ramses-div {
     position: relative;
     top: -2.5rem;
+    padding-left: 9.5rem;
   }
 }
 .main-content {
@@ -343,6 +397,7 @@ header a .tag-line {
   position: relative;
   left: 6rem;
   font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: 2rem;
   color: #833131;
   text-shadow: 3px 3px 3px  gray;
@@ -378,6 +433,11 @@ header a .tag-line {
   font-size: 1.3em;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+}
+@media (min-width: 541px) {
+  .join-btn {
+    width: 70%;
+  }
 }
 .exp {
   background-color: #00557e;
