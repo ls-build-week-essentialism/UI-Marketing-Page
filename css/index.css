@@ -154,10 +154,10 @@ header {
   padding: 2rem 1rem 2rem 1rem;
   background-color: white;
   border-bottom: 2px solid gray;
-  width: 80%;
+  width: 90%;
   z-index: 100;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   header {
     width: 90%;
     position: static !important;
@@ -172,7 +172,7 @@ header a {
   text-decoration: none;
   color: #a54848;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   header a {
     display: flex;
     position: relative;
@@ -181,9 +181,9 @@ header a {
 }
 header .nav-link-a {
   position: relative;
-  left: 2rem;
+  left: 1rem;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   header .nav-link-a {
     position: relative;
     left: -6rem;
@@ -196,7 +196,7 @@ header a .tag-line {
   color: black;
   text-shadow: 4px 4px 4px  gray;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   header a .tag-line {
     position: relative;
     top: 5rem;
@@ -210,12 +210,15 @@ header a .tag-line {
   padding: 1rem 3rem 0 3rem;
   border-bottom: 2px solid gray;
 }
-@media (min-width: 541px) {
+@media (min-width: 500px) {
   .e-logo-div {
     display: none;
   }
 }
-@media (min-width: 485px) {
+@media (min-width: 800px) {
+  .e-logo-div {
+    display: none;
+  }
 }
 .e-logo {
   position: relative;
@@ -229,10 +232,10 @@ header a .tag-line {
   margin-top: 1rem;
   color: #833131;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .team-blurb {
     position: relative;
-    left: -4rem;
+    left: -2rem;
     font-size: 2rem;
   }
 }
@@ -242,12 +245,12 @@ header a .tag-line {
   flex-direction: column;
   width: 80%;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .member-card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 20rem;
+    margin-left: 10rem;
     margin-top: 5rem;
   }
 }
@@ -259,35 +262,49 @@ header a .tag-line {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .member-name {
     align-self: flex-end;
-    position: relative;
-    left: -9rem;
   }
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
+  .justin {
+    position: relative;
+    right: 9rem;
+  }
+}
+@media (min-width: 800px) {
+  .jay {
+    position: relative;
+    right: 9rem;
+  }
+}
+@media (min-width: 800px) {
   .yurika {
     position: relative;
+    left: -9rem;
     top: 0.5rem;
   }
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .cameron {
     position: relative;
     top: 0.5rem;
+    right: 9.5rem;
   }
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .jasmine {
     position: relative;
     top: 0.5rem;
+    right: 9rem;
   }
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .ramses {
     position: relative;
-    top: 0.7rem;
+    top: 0.5rem;
+    right: 9rem;
   }
 }
 .member-bio {
@@ -297,7 +314,7 @@ header a .tag-line {
   left: 13rem;
   font-size: 20px;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .member-bio {
     position: relative;
     top: 4rem;
@@ -313,7 +330,7 @@ header a .tag-line {
   font-style: italic;
   font-size: 1.1rem;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .div-flex {
     display: flex;
     flex-wrap: wrap;
@@ -323,17 +340,16 @@ header a .tag-line {
 .jay-div {
   padding-top: 3rem;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .jay-div {
     position: relative;
     top: -3rem;
-    padding-left: 8rem;
   }
 }
 .yurika-div {
   padding-top: 3rem;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .yurika-div {
     position: relative;
     top: -2.5rem;
@@ -342,17 +358,16 @@ header a .tag-line {
 .cameron-div {
   padding-top: 3rem;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .cameron-div {
     position: relative;
     top: -2.5rem;
-    padding-left: 8rem;
   }
 }
 .jas-div {
   padding-top: 3rem;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .jas-div {
     position: relative;
     top: -2.5rem;
@@ -361,11 +376,11 @@ header a .tag-line {
 .ramses-div {
   padding-top: 3rem;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .ramses-div {
     position: relative;
     top: -2.5rem;
-    padding-left: 9.5rem;
+    padding-left: 1.5rem;
   }
 }
 .main-content {
@@ -377,7 +392,7 @@ header a .tag-line {
   background-color: white;
   width: 86%;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
 }
 .main-content .cta-blurb {
   border-top: 2px solid gray;
@@ -387,7 +402,7 @@ header a .tag-line {
   background-color: #5ac9ff;
   color: white;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .main-content .cta-blurb {
     width: 70%;
     margin-left: 9rem;
@@ -402,10 +417,15 @@ header a .tag-line {
   color: #833131;
   text-shadow: 3px 3px 3px  gray;
 }
-@media (min-width: 541px) {
+@media (min-width: 500px) {
+  .opening-tag {
+    left: 8rem;
+  }
+}
+@media (min-width: 800px) {
   .opening-tag {
     position: relative;
-    left: 30rem;
+    left: 20rem;
     font-size: 2.5rem;
   }
 }
@@ -434,7 +454,7 @@ header a .tag-line {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
-@media (min-width: 541px) {
+@media (min-width: 800px) {
   .join-btn {
     width: 70%;
   }

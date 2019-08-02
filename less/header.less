@@ -11,8 +11,11 @@ header {
     //background-color: #5ac9ff;
     background-color: white;
     border-bottom: 2px solid gray;
-    width:  80%;
+    width:  90%;
     z-index: 100;
+
+
+    
     
     @media @desktop {
         width: 90%;
@@ -44,7 +47,7 @@ header {
 
     .nav-link-a {
      position: relative;
-     left: 2rem;
+     left: 1rem;
 
       @media @desktop {
           position: relative;
@@ -76,13 +79,16 @@ header {
  padding: 1rem 3rem 0 3rem;
  border-bottom: 2px solid gray;
  
- @media @desktop {
+   @media @tablet {
+    display: none;
+    }
+ 
+ 
+   @media @desktop {
     display: none;
    }
 
-   @media @tablet {
-       //display: none;
-   }
+   
     
    
 }
