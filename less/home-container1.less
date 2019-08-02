@@ -1,0 +1,223 @@
+
+.container1 {
+    
+    background-image: url(../img/thao-le-hoang-yYSY93clr4w-unsplash.jpg);
+    height: 70%;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    @media @mobile {
+        width: 100%;
+    
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+        width: 100%;
+
+        @media @tablet {
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        @media @mobile {
+            flex-direction: column;
+            align-content: center;
+    
+        }
+
+        .product-description {
+            width: 70%;
+
+            @media @tablet {
+                width: 100%;
+
+            }
+
+            @media @mobile {
+                width: 100%;
+    
+            }
+
+            h1{
+                font-size: 8rem;
+                color: @Gray0;
+                text-align: center;
+                margin-top: 5%;
+                padding: none;
+                border: none;
+
+                @media @tablet {
+                   
+
+                }
+
+                @media @mobile {
+                    font-size: 6rem;    
+                }
+
+            }
+
+            h2{
+                font-size: 2rem;
+                color: @GrayB;
+                text-align: center;
+                margin-top: 2%;
+                margin-bottom: 0%;
+                padding: none;
+                border: none;
+            }
+
+            p{
+                color: @Gray0;
+                width: 80%; 
+                text-align: center; 
+                margin-left: auto;
+                margin-right:  auto;
+                margin-top: 1%;
+                margin-bottom: 5%;
+                
+
+                @media @tablet {
+                    margin: 5% auto;
+                    width: 80%;                   
+
+                }
+
+                @media @mobile {
+                    margin: 5% auto;
+                    width: 80%;
+    
+                }
+
+            }
+
+        }
+        
+
+        .register {
+
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            width: 25%;
+            height: 30rem;
+            padding: 2%;
+            margin-left: auto;
+            margin-right:  auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background: @Gray0;
+            border-radius: 15px;
+            box-shadow: 0 12px 12px -15px black;
+
+            @media @tablet {
+                justify-content: center;
+                align-content: center;
+                width: 55%;
+                height: 40rem;
+                margin-left: auto;
+                margin-right:  auto;
+                margin-top: 1%;
+                margin-bottom: 10%;
+            }
+
+            @media @mobile {
+                justify-content: center;
+                align-content: center;
+                width: 85%;
+                height: 40rem;
+                margin-left: auto;
+                margin-right:  auto;
+                margin-top: 5%;
+                margin-bottom: 12%;
+    
+            }
+
+            p {
+                color: @GrayE;
+                margin: 5% auto;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+
+            #sign-up-button {
+                display: block;
+                width: 50%;
+                height: 10rem;
+                margin: 5% auto;
+                border: none;
+                border-radius: 6px;
+                background: linear-gradient(45deg, @logoColor, @logoBackground);
+                font-size: 2rem;
+                text-align: center;
+            
+                @media @mobile {
+                    height: 18%;
+                    width: 55%
+        
+                }
+
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                    color: white;
+            
+                }
+
+            }     
+
+            #little-p {
+                color: @GrayD;
+                width: 100%; 
+                margin: 40px 0 20px; 
+                text-align: center;
+                font-size: 1.4rem;
+                letter-spacing: 2px;
+                border-top: 1px solid @GrayB; 
+                line-height: 0.09em;
+
+                span {
+                    background:@Gray0; 
+                    padding: 0px 10px; 
+
+                }
+
+            }
+
+            #log-in-button {
+                display: block;
+                width: 50%;
+                height: 10rem;
+                margin: 3% auto;
+                border: none;
+                border-radius: 6px;
+                background: linear-gradient(45deg, @logoColor, @logoBackground);
+                font-size: 2rem;
+                text-align: center;
+                
+                @media @mobile {
+                    height: 18%;
+                    width: 55%;
+                }
+
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                    color: @GrayA;
+            
+                }
+
+            }  
+
+        }
+
+    }
+
+}
